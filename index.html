@@ -9,8 +9,10 @@
 <body>
     <header class="site-header">
         <nav class="nav-container">
-            <img src="https://scontent.fmnl8-5.fna.fbcdn.net/v/t39.30808-6/662868838_122097456248808948_4962209339218122836_n.jpg?stp=dst-jpg_tt6&cstp=mx720x730&ctp=s720x730&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGr0BZSjAQKH1zHXPl1AA5RO8xbbVe06qk7zFttV7TqqRJ64cXzp6jYxr4gCT17ilHE6iVvDDqdaK1dkiWufOYf&_nc_ohc=tyOAutbiqiwQ7kNvwEK5Gqx&_nc_oc=AdrqjO3yipkqt3MJNVW890vIxFRZIiz7T5kjc-E4Yi844ppJtI7_7OOFx1ZeRnKtjH8&_nc_zt=23&_nc_ht=scontent.fmnl8-5.fna&_nc_gid=VYKw9FF-Ui3oXCNJfHhUdg&_nc_ss=7a2a8&oh=00_AQDhuwxnhZq8PU9XLS7AAWF--vdWDRD6_3bCNzQiea0vLQ&oe=6A53A129" alt="">
-            <h1 class="logo">Jade Jardenico</h1>
+            <div class="brand">
+                <img class="logo-img" src="bodoy.png" alt="Jade Jardenico logo">
+                <h1 class="logo">Jade Jardenico</h1>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -18,21 +20,28 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"></button>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero-section">
             <div class="hero-content">
-                <h1>Welcome to My Page</h1>
+                <p class="eyebrow">Personal Portfolio</p>
+                <h1 id="main-heading">Welcome to My Page</h1>
                 <h2>Bachelor of Science in Information Technology</h2>
                 <p>This is my simple personal webpage.</p>
+                <div class="hero-actions">
+                    <button class="action-btn" id="show-info-btn" type="button">Show Info</button>
+                </div>
+                <div class="info-box" id="info-box" hidden></div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="section-card">
             <h2>About Me</h2>
             <div class="about-container">
+                <img class="about-photo" src="carlo.jpg" alt="Jade Jardenico profile photo">
                 <div class="about-text">
                     <p>
                         My name is Jade Jardenico. I am 19 years old and I am from
@@ -48,6 +57,8 @@
                     <ul>
                         <li>Bachelor of Science in Information Technology</li>
                         <li>Holy Child Central Colleges Inc.</li>
+                        <li>Colongulo National High School. </li>
+                        <li>Little Baguio Elementary School.</li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +66,7 @@
 
         <div class="divider"></div>
 
-        <section id="skills">
+        <section id="skills" class="section-card">
             <h2>My Skills</h2>
             <ul class="skills-list">
                 <li>HTML</li>
@@ -69,7 +80,7 @@
 
         <div class="divider"></div>
 
-        <section id="projects">
+        <section id="projects" class="section-card">
             <h2>Recent Projects</h2>
             <div class="projects-container">
                 <article class="project-card">
@@ -99,11 +110,19 @@
 
         <section id="contact" class="section-card">
             <h2>Contact Me</h2>
-            <ul class="contact-list>
-                <li><strong>Email:</strong> <a href="mailto:jardenicojade@gmail.com">jardenicojade@gmail.com</a><li>
-                    <li><strong>Phone:</strong> 09753202959</li>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:jardenicojade@gmail.com">jardenicojade@gmail.com</a></li>
+                <li><strong>Phone:</strong> 09753202959</li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/jade." target="_blank">Jade</a></li>
+            </ul>
             <p>Thank you for visiting my page matsalove.</p>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Jade Jardenico. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
